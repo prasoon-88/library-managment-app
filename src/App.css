@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu&family=Rubik&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Phudu', cursive;
+  font-family: 'Rubik', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+html body{
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+.loading{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  user-select: none;
+}
+.loading > img{
+  width: 15vw;
+  user-select: none;
+}
+Link > h2{
+  color: white;
+}
+button,.card{
+  transition: 0.1s ease-in scale;
+  cursor: pointer;
+}
+button:active,.card:active{
+  scale: 0.9;
+}
+::selection{
+  background: rgba(238, 88, 103, 0.806);
+  
+}

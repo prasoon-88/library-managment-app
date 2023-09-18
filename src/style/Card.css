@@ -1,0 +1,98 @@
+.idCardContainer{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 89vh;
+    border-radius: 2vw;
+    position: relative;
+}
+.cardContainer{
+    box-shadow: 0 0 0.5vw 0.1vw rgb(200, 199, 199); 
+    margin:5% auto;   
+    width: 500px;
+    height: 300px;
+    max-width: 5000px;
+    max-height: 3000px;
+    display: grid;
+    grid-template-rows: 2fr 5fr;
+    position: relative;
+}
+
+.cardContainer > .heading{
+    display: flex;
+    background: linear-gradient(to left,rgb(238, 113, 126),rgb(238, 88, 103));
+    color: rgb(255, 255, 255);
+    justify-content: start;
+    padding-left: 30px;
+    align-items: center;
+    gap: 10px;
+}
+.cardContainer > .heading > img{
+    width: 60px;
+    height: 55px;
+}
+.cardContainer > .heading > div > h1{
+    font-size: 25px;
+}
+.cardContainer > .heading > div > h2{
+    font-size: 15px;
+    padding-top: 5px;
+    color: rgba(241, 241, 242, 0.886);
+    font-weight: 400;
+}
+.cardContainer > .main{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+}
+.main > .box1{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+#sign{
+    width: 100px;
+    transform:rotate(-5deg);
+    opacity: 0.8;
+}
+#dummyphoto{
+    width: 110px;
+    box-shadow: 0 0 5px 1px rgba(47, 46, 46, 0.64);
+    padding-bottom: 5px;
+}
+.main > .box2{
+    font-size:15px;
+    display: grid;
+    color: rgba(6, 6, 6, 0.903);
+    gap: 10px;
+}
+
+.main > .box2 > span:nth-child(1) > p{
+    color: rgb(107, 106, 106);
+}
+.main > .box2 > span > h2{
+    color: rgb(202, 70, 83);
+}
+#barCodeImg{
+    width: 200px;
+    height: 50px;
+    align-self: center;
+    justify-self:start;
+    transform: translate(-7px);
+}
+.btnContainer{
+    display: grid;
+    place-content: center;
+    position: relative;
+}
+.saveCard{
+    font-size: 1.2vw;
+    padding: 0.5vw 1vw;
+    background: rgb(238, 88, 103);
+    color: white;
+    border: none;
+    justify-self: center;
+}

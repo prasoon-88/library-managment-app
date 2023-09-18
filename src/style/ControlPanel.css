@@ -1,0 +1,156 @@
+.controlPanel{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows:0.8fr 1fr 3fr;
+    padding: 2vw;
+    border-radius: 2vw;
+    background: rgb(248, 248, 248);
+    box-shadow: 0 0 1vw 0.05vw rgba(128, 128, 128, 0.213) ;
+    gap: 2vw;
+    padding-bottom: 5vw;
+}
+.part1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5vw;
+}
+.part2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2vw;
+    font-size: 2vw;
+    width: 100%;
+}
+.part3{
+    background: white;
+    height: 45vh;
+    border-radius: 1vw;
+    box-shadow: 0 0 2vw 0.01vw rgba(218, 217, 217, 0.428);
+    padding: 1vw 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: center;
+    font-size: 1.5vw;
+}
+.part1 > div > h1{
+    font-size: 2vw;
+    margin-bottom:1vw;
+}
+.part1 > div > h2{
+    font-weight: lighter;
+    font-size: 1.2vw;
+    color: rgba(37, 37, 37, 0.83);
+}
+.collageName{
+    color: rgb(246 , 84 , 99);
+}
+.part2 > .box{
+    background: white;
+    border-radius: 1vw;
+    box-shadow: 0 0 2vw 0.01vw rgba(218, 217, 217, 0.428);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    padding: 1.5vw 2vw;
+    font-size: 1.5vw;
+    transition: all ease 0.5s;
+}
+.part2 > .box:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 2vw 0.01vw rgba(255, 255, 255, 0.428);
+    cursor: pointer;
+    
+}
+.part2 > .box > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+}
+.part2 > .box > div > i{
+    padding: 1.2vw;
+    background: rgb(238, 88, 103);
+    border-radius: 50%;
+    color: white;
+    animation: animateBox 1.5s ease infinite;
+
+}
+.part2 > .box > h4 {
+    font-size: 1.3vw;
+    font-weight: 300;
+}
+
+table,
+th,
+td {
+    border-bottom: 0.1vw solid rgb(224, 224, 224);
+    border-collapse: collapse;
+    text-align: center;
+    padding: 0.55vw 0;
+    font-size: 1.2vw;
+    color: rgba(250, 109, 109, 0.856);
+}
+
+tr > td {
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+}
+#check{
+    display: flex;
+    justify-content: center;
+}
+#check > p{
+    background: rgb(238, 88, 95);
+    padding: 0.3vw 1vw;
+    color: white;
+    font-weight: 100;
+}
+td > i{
+    color: green;
+    font-size: 1.5vw;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.2vw;
+}
+td > i:hover{
+    color: rgb(0, 21, 26);
+    background: rgb(224, 221, 221);
+    color: rgb(62, 60, 60);
+}
+.issueBook{
+    border: none;
+    background: rgb(238, 88, 103);
+    color: white;
+    font-size: 1.2vw;
+    padding: 0.5vw 1vw;
+    border-radius: 0.3vw;
+}
+.quate{
+    color: #cdc7c7;
+    margin-top: 7%;
+    font-size: 2.2vw;
+    user-select: none;
+    transition: all ease 1s;
+}
+.quateAuthor{
+    color: #077e9065;
+    margin-top: 2%;
+    font-size: 2vw;
+    user-select: none;
+}
+@keyframes animateBox {
+    0%{
+        scale: 0.98;
+    }
+    50%{
+        scale: 1.05;
+    }
+    100%{
+        scale: 0.98;
+    }
+    
+}
